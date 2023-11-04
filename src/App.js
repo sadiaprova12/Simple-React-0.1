@@ -4,22 +4,18 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Product></Product>
     </div>
   );
+}
+{/* Product received korar jonno perameter use korbo seta hocche props */}
+function Product(props){
+  return(
+    <div>
+      <h3>Name:</h3>
+      <p>Price:</p>
+    </div>
+  )
 }
 
 export default App;
